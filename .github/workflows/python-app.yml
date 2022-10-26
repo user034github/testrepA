@@ -15,7 +15,7 @@ jobs:
           python-version: '3.10.7'
       - name: dependencies
         run: |
-          cd  ${{ inputs.working_directory }}
+          working-directory: ./TestcasesA
           pip install -r TestcasesA/requirements.txt
       - name: Test with pytest
         run: |
