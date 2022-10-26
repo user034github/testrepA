@@ -15,7 +15,6 @@ jobs:
           python-version: '3.10.7'
       - name: dependencies
         run: |
-          working-directory: ./TestcasesA
           pip install -r TestcasesA/requirements.txt
       - name: Test with pytest
         run: |
