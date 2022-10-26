@@ -16,7 +16,7 @@ jobs:
       - name: dependencies
         run: |
           cd  ${{ inputs.working_directory }}
-          pip install -r requirements.txt
+          pip install -r TestcasesA/requirements.txt
       - name: Test with pytest
         run: |
           pytest -r -w
